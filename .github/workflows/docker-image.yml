@@ -35,3 +35,6 @@ jobs:
 
     - name: Push Docker image
       run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/actions:$(date +%s)
+
+    - name: done
+      run: echo "Your image is packed and deployed to dckr-hub"
